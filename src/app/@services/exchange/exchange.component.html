@@ -1,0 +1,36 @@
+<form class="head" xmlns="http://www.w3.org/1999/html">
+
+
+  <div class="currency">
+      <select  [formControl]="exchangeSelectForm1">
+        <ng-container *ngFor="let exchange of exchangeRates; let i = index">
+          <option *ngIf="i > 0" [value]="i">
+            {{exchange.currency}}
+          </option>
+        </ng-container>
+      </select>
+
+
+
+
+      <input type="number" (keydown)="numberOnly($event)" (input)="exchangeInput1()" [formControl]="exchangeInputForm1"  >
+
+  </div>
+  <div class="currency">
+
+      <select [formControl]="exchangeSelectForm2">
+        <ng-container *ngFor="let exchange of exchangeRates; let i = index">
+          <option *ngIf="i > 0" [value]="i">
+            {{exchange.currency}}
+          </option>
+        </ng-container>
+      </select>
+
+
+
+
+      <input type="number" (keydown)="numberOnly($event)" (input)="exchangeInput2()" [formControl]="exchangeInputForm2" >
+
+
+  </div>
+</form>

@@ -1,0 +1,71 @@
+
+
+.head{
+width: fit-content;
+
+height: 70px;
+  box-shadow: inset 0 0 2px 3px grey;
+
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 10px;
+
+
+}
+.currency{
+
+  border: 1px solid #dadce0;
+  width: 90%;
+  height: 40%;
+  margin: 3px auto auto;
+  padding: 1px;
+  caret-color: #1a73e8;
+  color: #70757a;
+  overflow: hidden;
+  display: flex;
+  border-radius: 6px;
+
+
+}
+p{
+  height: 30%;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+input {
+
+  border: 2px;
+  width: 65%;
+  height: 90%;
+outline:none;
+
+}
+
+select{
+  width: 30%;
+  height: 90%;
+  border: 0;
+  border-right: 2px solid lightgray;
+  text-align: center;
+  outline:none;
+
+
+}
+select:after{
+border:0
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+
+
+
+
